@@ -106,6 +106,7 @@ ORDER BY sessions DESC;
 -- 6. NEW VS REPEAT SESSIONS
 -- =========================================================
 
+
 SELECT
     CASE
         WHEN is_repeat_session = 1 THEN 'Repeat'
@@ -113,9 +114,5 @@ SELECT
     END AS session_type,
     COUNT(*) AS sessions
 FROM website_sessions
-GROUP BY
-    CASE
-        WHEN is_repeat_session = 1 THEN 'Repeat'
-        ELSE 'New'
-    END
+GROUP BY session_type
 ORDER BY sessions DESC;
