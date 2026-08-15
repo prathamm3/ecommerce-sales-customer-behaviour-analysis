@@ -59,7 +59,7 @@ Provides a high-level view of business performance, including:
 -   Refunds by Product
 -   Orders by Device
 
-![Sales Overview](sales_overview.png)
+![Sales Overview](screenshots/sales_overview.png)
 
 ### Product Performance
 
@@ -73,7 +73,7 @@ Key visuals include:
 -   Refunds by Product
 -   Gross Margin by Product
 
-![Product Performance](product_performance.png)
+![Product Performance](screenshots/product_performance.png)
 
 ### Customer & Website Behaviour
 
@@ -91,7 +91,7 @@ Key metrics and visuals include:
 -   New vs Repeat Sessions
 
 ![Customer & Website
-Behaviour](customer_behaviour.png)
+Behaviour](screenshots/customer_behaviour.png)
 
 ------------------------------------------------------------------------
 
