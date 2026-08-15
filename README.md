@@ -322,7 +322,7 @@ data_analysis_project_01/
 │
 ├── README.md
 │
-├── dashboard/
+├── screeshots/
 │   ├── sales-overview.png
 │   ├── product-performance.png
 │   └── customer-website-behaviour.png
