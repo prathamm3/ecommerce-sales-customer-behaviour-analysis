@@ -322,10 +322,10 @@ data_analysis_project_01/
 │
 ├── README.md
 │
-├── screeshots/
-│   ├── sales-overview.png
-│   ├── product-performance.png
-│   └── customer-website-behaviour.png
+├── screenshots/
+│   ├── sales_overview.png
+│   ├── product_performance.png
+│   └── customer_website-behaviour.png
 │
 ├── sql/
 │   ├── 01_data_exploration.sql
