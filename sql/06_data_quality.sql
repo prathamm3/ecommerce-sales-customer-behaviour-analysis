@@ -52,3 +52,18 @@ SELECT
     SUM(price_usd IS NULL) AS null_price,
     SUM(cogs_usd IS NULL) AS null_cogs
 FROM orders;
+
+
+-- =========================================================
+-- 5. NULL VALUES IN ORDER ITEM FIELDS
+-- =========================================================
+-- Checks for missing values in important product and
+-- financial fields.
+
+SELECT
+    SUM(order_item_id IS NULL) AS null_order_item_id,
+    SUM(order_id IS NULL) AS null_order_id,
+    SUM(product_id IS NULL) AS null_product_id,
+    SUM(price_usd IS NULL) AS null_price,
+    SUM(cogs_usd IS NULL) AS null_cogs
+FROM order_items;
