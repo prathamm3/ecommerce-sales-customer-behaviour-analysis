@@ -4,7 +4,7 @@ USE maven_fuzzy_factory;
 -- =========================================================
 -- 1. OVERALL BUSINESS KPIs
 -- =========================================================
--- Calculates revenue, COGS, gross profit, margin and AOV.
+-- Calculates gross revenue, COGS, gross profit, margin and AOV.
 
 SELECT
     COUNT(*) AS total_orders,
@@ -29,7 +29,7 @@ FROM orders;
 -- =========================================================
 -- 2. MONTHLY SALES PERFORMANCE
 -- =========================================================
--- Tracks order volume, revenue, COGS, gross profit and
+-- Tracks order volume, gross revenue, COGS, gross profit and
 -- average order value over time.
 
 SELECT
