@@ -28,9 +28,9 @@ LEFT JOIN orders AS o
 SELECT
     COALESCE(ws.utm_source, 'Unattributed') AS utm_source,
     COUNT(DISTINCT ws.website_session_id) AS sessions,
-    COUNT(DISTINCT o.order_id) AS orders,
+    COUNT(DISTINCT o.website_session_id) AS sessions_with_orders,
     ROUND(
-        COUNT(DISTINCT o.order_id)
+        COUNT(DISTINCT o.website_session_id)
         / COUNT(DISTINCT ws.website_session_id) * 100,
         2
     ) AS conversion_rate
@@ -51,9 +51,9 @@ ORDER BY
 SELECT
     ws.device_type,
     COUNT(DISTINCT ws.website_session_id) AS sessions,
-    COUNT(DISTINCT o.order_id) AS orders,
+    COUNT(DISTINCT o.website_session_id) AS sessions_with_orders,
     ROUND(
-        COUNT(DISTINCT o.order_id)
+        COUNT(DISTINCT o.website_session_id)
         / COUNT(DISTINCT ws.website_session_id) * 100,
         2
     ) AS conversion_rate
@@ -77,9 +77,9 @@ SELECT
         ELSE 'New'
     END AS session_type,
     COUNT(DISTINCT ws.website_session_id) AS sessions,
-    COUNT(DISTINCT o.order_id) AS orders,
+    COUNT(DISTINCT o.website_session_id) AS sessions_with_orders,
     ROUND(
-        COUNT(DISTINCT o.order_id)
+        COUNT(DISTINCT o.website_session_id)
         / COUNT(DISTINCT ws.website_session_id) * 100,
         2
     ) AS conversion_rate
