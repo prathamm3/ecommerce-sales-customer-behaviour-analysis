@@ -4,8 +4,8 @@ USE maven_fuzzy_factory;
 -- =========================================================
 -- 1. OVERALL REFUND SUMMARY
 -- =========================================================
--- Measures the number of refunds, refunded items,
--- total refund value and average refund value.
+-- Measures refund ercords, refunded items, total refund 
+-- value and average refund value.
 
 SELECT
     COUNT(*) AS refund_records,
